@@ -1,0 +1,31 @@
+
+.pagetitle{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formContainer{
+    margin-top: 10px;
+    margin-left: 30px;
+   
+    
+}
+
+.inputbox{
+    background-color: white;
+    color: black;
+    width: 35%;
+    height: 40px;
+    font-size: 20px;
+}
+
+.submitbutton{
+    background-color: #00A3FF;
+    border-color:#00A3FF ;
+    border-radius: 10px;
+    
+}

@@ -1,0 +1,167 @@
+#header {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+}
+
+#date {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+  color: #00A3FF;
+}
+
+#loginButton {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #00A3FF;
+  border-radius: 0.5rem;
+}
+
+#loginButton:hover, #accountButton:hover {
+  background-color: #5CC4FF;
+}
+
+#accountButton {
+  position: absolute;
+  padding: 0.5rem 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #00A3FF;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+#profileImage {
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#logo {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#club {
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+#hub {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00A3FF;
+}
+
+#searchBarContainer {
+  text-align: center;
+}
+
+#searchBar {
+  background-color: #FAFAFA;
+  border-color: #00A3FF;
+  border-style: solid;
+  height: 2rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+#searchBar:hover, #searchBar:focus {
+  border-color: #00A3FF;
+  outline: none;
+  box-shadow: 0.05rem 0.05rem 0.1rem 0.1rem #00B4FF;
+}
+
+#navigationContainer {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+.navigationChoice {
+  color: black;
+  padding: 2rem 3rem;
+}
+
+.navigationChoice:hover {
+  color: #5CC4FF;
+}
+
+#newsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem;
+  justify-content: center;
+  color: black;
+}
+
+.newsBlock {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 0;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+  background-color: #DFDFDF;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.newsBlock:hover{
+  background-color:#89d5ff;
+
+}
+
+.newsTitle {
+  margin-bottom: 1rem;
+}
+
+.newsCaption {
+  margin-top: 1rem;
+}
+
+
+
+
+
+.animatedbg{
+  background-image: linear-gradient(45deg, #fe0505, #035a9e,#fe0505 );
+  background-size: 900%;
+  background-position: right;
+  animation: bg-anim 10s infinite alternate;
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  height: max-content;
+  min-height: 100vh;
+}
+
+@keyframes bg-anim {
+  0% {background-position: right;}
+  100% {background-position: left;}
+}
+
+

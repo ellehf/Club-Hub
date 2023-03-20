@@ -1,0 +1,144 @@
+.container {
+    padding: 0 2rem;
+  }
+
+
+.topofpage{
+    padding-top: 20px;
+    padding-bottom: 20px; 
+
+    
+}
+
+.date{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 100;
+   color: #00A3FF;
+}
+
+.loginButtonContainer{
+    /*position: fixed;
+    top: 10px;
+    right: 10px;
+    */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-color: #00A3FF;
+    border-radius: 10px;
+    
+    
+  
+}
+
+.loginButton{
+    background-color:#00A3FF;
+    border-color:#00A3FF;
+    border-style: solid;
+    border-radius: 5px;
+    color:white;
+}
+
+.loginButton:hover{
+    background-color: #5CC4FF;
+    border-color:#5CC4FF;;
+}
+
+.clubhubtitle{
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10%;
+  height: 50%;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.searchBarContainer{
+  text-align: center;
+  padding-top: 20px;
+  color: white; 
+  
+}
+
+.newsBlockContainer{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.newsBlock{
+  display: inline-block;
+  background-color:#dadada;
+  height: 250px;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.newsBlockTitle{
+  
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.newsBlockPhoto{
+  height: 150px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.newsBlockCaption{
+  height: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+}
+.homepageContainer{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  
+}
+
+.homepageChoice{
+  color: black;
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 50px;
+  
+}
+
+.homepageChoice:hover{
+  color: #5CC4FF;
+}
+
+
+#searchbarstarter{
+    color: black; 
+    background-color:#FAFAFA;
+    height: 30px;
+    width: 200px;
+
+}
+#clubpart{
+  font-size:40px;
+  font-weight: bold;
+  color: black;
+  /*color: #000000;*/
+}
+
+#hubpart{
+  font-size:40px;
+  font-weight:bold;
+  color: #00A3FF;
+}

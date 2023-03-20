@@ -1,0 +1,33 @@
+#container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #DFDFDF;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  height: 350px;
+}
+
+#container:hover {
+  background-color:#89d5ff;
+
+}
+
+#image {
+  max-height: 250px;
+  max-width: 300px;
+  line-height: 250px;
+  /*
+  max-height: 15rem;
+  max-width: 20rem;
+  display: flex;
+  flex-flow: column;
+  flex-basis: 0;
+  text-align: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+  background-color: #DFDFDF;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  */
+}

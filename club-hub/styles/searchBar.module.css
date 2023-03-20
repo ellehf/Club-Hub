@@ -1,0 +1,31 @@
+
+.input {
+    width: 500px;
+    height: 45px;
+    border: 2px solid white;
+    font-family: inherit;
+    font-size: medium;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: white;
+    margin-left: 30px;
+}
+
+.btn {
+    display: block;
+    height: 45px;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-family: inherit;
+    color: black;
+    border: none;
+    background-color: white;
+    font-style: bold;
+}
+
+.btn:hover{
+    background-color: lightgray;
+}

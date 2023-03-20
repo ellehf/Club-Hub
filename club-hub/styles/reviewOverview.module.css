@@ -1,0 +1,57 @@
+
+.card {
+    outline-width: 3px;
+    outline-style:solid;
+    width: 40vw;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 2vw;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+    color: black;
+    outline-color: #00A3FF;
+    background-color: white;
+  }
+
+.container {
+    text-align: left;
+    font-size: 2vw ;
+}
+
+.li {
+  list-style-type: none;  
+  float: left;
+  font-size: 2vw;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+.li:last-child {
+  float: right;
+}
+ 
+.top {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+
+
+
+
+.fullstar {
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+  }
+.emptystar{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: lightgray;
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+}

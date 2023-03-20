@@ -1,0 +1,44 @@
+#signContainer {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+
+#button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: solid gray;
+  border-width: 0.1rem;
+}
+
+#profileImage {
+  border-radius: 2.5rem;
+  border: 0.1rem solid black;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#logo {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+#club {
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+}
+
+#hub {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #00A3FF;
+}

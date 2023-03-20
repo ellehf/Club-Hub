@@ -1,0 +1,67 @@
+#back {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 0.5rem;
+  margin: 1rem;
+  color: white;
+  background-color: gray;
+  border-radius: 0.5rem;
+}
+
+#back:hover {
+  background-color: lightgray;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.field {
+  padding: 0.75rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+}
+
+.label {
+  padding-right: 0.5rem;
+}
+
+.input {
+  width: 20rem;
+  height: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+#eventList {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.deleteButton {
+  margin-left: 0.25rem;
+  border-radius: 0.5rem;
+  border: solid black;
+  border-width: 0.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: 0.25rem;
+  background-color: #CE1C44;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: red;
+}

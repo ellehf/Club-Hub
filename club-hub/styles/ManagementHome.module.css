@@ -1,0 +1,55 @@
+#back {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding: 0.5rem;
+  margin: 1rem;
+  color: white;
+  background-color: gray;
+  border-radius: 0.5rem;
+}
+
+#back:hover {
+  background-color: lightgray;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.manage {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  color: white;
+  background-color: #00A3FF;
+  border-radius: 0.5rem;
+}
+
+.manage:hover {
+  background-color: #5CC4FF;
+}
+
+#disband {
+ font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  color: white;
+  background-color: darkred;
+  border-radius: 0.5rem;
+}
+
+#disband:hover {
+  background-color: red;
+}

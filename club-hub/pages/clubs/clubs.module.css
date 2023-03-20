@@ -1,0 +1,30 @@
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 20px;
+
+  }
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+.ul {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px;
+}

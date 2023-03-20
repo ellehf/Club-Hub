@@ -1,0 +1,203 @@
+.container {
+    padding: 0 2rem;
+}
+
+.clubInfoContainer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    display: flex;
+}
+
+.clubImage{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clubTitle{
+    font-size: 45px;
+}
+
+.clubInfo{
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    width: 500px;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+.clubAttribute{
+    margin-top: 20px;
+}
+
+.contactClubContainer{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactClub{
+    background-color:#00A3FF;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.contactClub:hover{
+    background-color: #97D9FF;
+}
+
+.newsTitle{
+    color: #00A3FF;
+    font-weight: bold;
+    font-size: 25px;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+.newsContainer{
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+    width: 300px;
+    font-size: 15px;
+    padding-left: 80px;
+}
+
+.news{
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 435px;
+}
+
+.secondRowContainer{
+    padding-top: 20px;
+    display: flex;
+    padding-left: 1rem;
+}
+
+.leaveReviewTitle{
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 25px;
+    width: 500px;
+}
+
+.reviewTitle{
+    color: #00A3FF;
+    font-weight: bold;
+    font-size: 25px;
+    width: 500px;
+}
+
+.reviewsContainer{
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem;
+    display: flex;
+    border-color: #00A3FF;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.reviews{
+    padding: 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    width: 500px;
+    color: #000000;
+}
+
+.eachReview{
+    width: 465px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+.fullStar {
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+}
+.emptyStar{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: lightgray;
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+}
+
+.input {
+    padding: 12px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #000000;
+    border-radius: 0.5rem;
+}
+
+.submit[type=submit] {
+    background-color:#ff6600;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: 0;
+}
+
+.submit[type=submit]:hover{
+    background-color: #FFD580;
+}
+
+.textarea {
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: white;
+    color: #000000;
+    border-radius: 0.5rem;
+    outline:none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.newsitemcontainer{
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+.manage {
+    background-color:#00A3FF;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    width: 9rem;
+
+}
+
+.manage:hover{
+    background-color: #97D9FF;
+}

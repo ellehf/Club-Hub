@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: club.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: club.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Club definition.
+ */
+
+import { ROLES } from "./roles"
+
+class Club {
+    #id;
+    #name;
+    #members;
+    #meeting;
+    #tags;
+    #photos;
+    #reviews;
+    #applications;
+    #presidents;
+    #totalRating;
+
+    /**
+     * Constructs an instance of Club.
+     *
+     * @param {ObjectId} id - 12-byte unique identifier.
+     * @param {string} name - Name of club.
+     * @param {Member[]} members - List of members in club.
+     * @param {Object} meeting - Meeting location and time.
+     * @param {string[]} tags - List of club tags.
+     * @param {string[]} photos - List of club photos.
+     * @param {string[]} reviews - List of reviews about the club.
+     * @param {User[]} applications - List of applications to join club.
+     */
+    constructor(id, name, members, meeting, tags, photos, reviews, applications) {
+	this.#id = id;
+        this.#name = name;
+        this.#members = members;
+        this.#meeting = meeting;
+        this.#tags = tags;
+        this.#photos = photos;
+        this.#reviews = reviews;
+        this.#applications = applications;
+    }
+
+    /**
+     * Get name of club.
+     *
+     * @return {string} Name of club.
+     */
+    getName() {
+	return this.#name;
+    }
+
+    /**
+     * Get list of members.
+     *
+     * @return {Member[]} List of members.
+     */
+    getMembers() {
+	return this.#members;
+    }
+
+    /**
+     * Get meeting location.
+     *
+     * @return {string} Meeting location.
+     */
+    getLocation() {
+	return this.#meeting.location;
+    }
+
+    /**
+     * Get meeting time.
+     *
+     * @return {string} Meeting time.
+     */
+    getTime() {
+	return this.#meeting.time;
+    }
+
+    /**
+     * Get list of club tags.
+     *
+     * @return {Tag[]} Club tags.
+     */
+    getTags() {
+	return this.#tags;
+    }
+
+    /**
+     * Get list of photo URLs.
+     *
+     * @return {string} List of photo URLs.
+     */
+    getPhotos() {
+	return this.#photos;
+    }
+
+    /**
+     * Get list of reviews.
+     *
+     * @return {Review[]} List of reviews.
+     */
+    getReviews() {
+	return this.#reviews;
+    }
+
+    /**
+     * Get list of presidents.
+     *
+     * @return {Member[]} List of presidents.
+     */
+    getPresidents() {
+	let presidents = [];
+	for (let i = 0; i &lt; this.#members.length; i++) {
+	    if (this.#members[i].role === ROLES.PRESIDENT) {
+		presidents.push(this.#members[i]);
+	    }
+	}
+
+        return presidents;
+    }
+
+    /**
+     * Get average rating of all reviews.
+     *
+     * @return {number} Average rating.
+     */
+    getAvgRating() {
+	let totalRating = 0;
+        const reviewCount = this.#reviews.length;
+	for (let i = 0; i &lt; reviewCount; i++) {
+	    totalRating += this.#reviews[i].rating;
+	}
+
+        return totalRating / reviewCount;
+    }
+
+    /**
+     * Get club population.
+     *
+     * @return {number} Club size.
+     */
+    getSize() {
+        return this.#members.length;
+    }
+
+    /**
+     * Change club name.
+     *
+     * @param {string} name - New club name.
+     */
+    setName(name) {
+        this.#name = name;
+    }
+
+    /**
+     * Change meeting location.
+     *
+     * @param {string} loc - Club meeting location.
+     */
+    setLocation(loc) {
+	this.#meeting.location = loc;
+    }
+
+    /**
+     * Change meeting time.
+     *
+     * @param {string} time - Club meeting time.
+     */
+    setTime(time) {
+	this.#meeting.time = time;
+    }
+
+
+    /**
+     * Add member to the club.
+     *
+     * @param {User} applicant - Applicant to add to the club.
+     */
+    addMember(applicant) {
+        member = new Member(applicant, this.#name, ROLE.MEMBER);
+        this.#members.push(member);
+        member.getUser().addMembership(member);
+    }
+
+    /**
+     * Remove member from club.
+     *
+     * @param {Member} member - Member to remove from the club.
+     */
+    delMember(member) {
+        member.getUser().delMembership(member);
+
+        const index = this.#members.indexOf(member);
+        if (index > -1) {
+            this.#members.splice(index, 1);
+        } else {
+            window.alert("Member " + member.getUser().getName() + " does NOT exist! ");
+        }
+    }
+
+    /**
+     * Add new president to club.
+     *
+     * @param {Member} president - Member with the President role.
+     */
+    addPresident(president) {
+	this.#members.push(president);
+    }
+
+    delPresident(president, disband) {
+        const index = this.#presidents.indexOf(president);
+        if (index > -1) {
+            if (disband &amp;&amp; this.#presidents.length == 1) {
+                return false;
+            }
+            this.#members.splice(index, 1);
+        } else {
+            window.alert("President " + president.getUser().getName() + " does NOT exist! ");
+        }
+        return true;
+    }
+
+    addApplication(applicant) {
+        this.#applications.push(applicant);
+    }
+
+    delApplication(applicant) {
+        const index = this.#applications.indexOf(applicant);
+        if (index > -1) {
+            this.#applications.splice(index, 1);
+        } else {
+            window.alert("Applicant " + applicant.getName() + " does NOT exist! ");
+        }
+    }
+
+    addReview(review) {
+        this.#reviews.push(review);
+        this.#totalRating += review.getRating();
+    }
+    
+    delReview(review) {
+        const index = this.#reviews.indexOf(review);
+        if (index > -1) {
+            this.#totalRating -= review.getRating();
+            this.#reviews.splice(index, 1);
+        } else {
+            window.alert("This review does NOT exist! ");
+        }
+    }
+}
+
+export default Club;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Club.html">Club</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Thu Nov 03 2022 20:59:00 GMT-0700 (Pacific Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
